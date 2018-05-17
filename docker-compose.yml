@@ -1,0 +1,9 @@
+version: '3'
+services:
+  webapp:
+    container_name: py
+    build: ./
+    ports: 
+      - 15000:5000
+    volumes: 
+      - ./:/usr/src/app
